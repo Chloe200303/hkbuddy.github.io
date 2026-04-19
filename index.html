@@ -1,135 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HKBuddy Project Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        ul {
-            margin-left: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>HKBuddy Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fb;
+}
+
+/* NAVBAR */
+.nav {
+    position: fixed;
+    width: 100%;
+    background: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav b {
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #3498db;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* PROGRESS */
+.progress {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat h1 {
+    color: #3498db;
+}
+
+/* TEAM */
+.team {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>HKBuddy – Project Webpage</h1>
-<p><b>A Trusted Marketplace for International Students in Hong Kong</b></p>
+<div class="nav">
+<b>HKBuddy</b>
+</div>
 
-<section>
-<h2>1. Project Overview</h2>
-<p>
-HKBuddy is a campus-based e-commerce platform designed for international students in Hong Kong. 
-It focuses on solving high-friction problems such as housing search and second-hand transactions 
-through a verified peer-to-peer system.
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>HKBuddy</h1>
+<p>A Trusted Marketplace for International Students in Hong Kong</p>
+<div class="btn">Project Webpage</div>
+</div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="section">
+<h2>Project Overview</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+HKBuddy is a verified peer-to-peer marketplace designed to help international students 
+in Hong Kong solve housing search and second-hand trading problems through a trusted ecosystem.
 </p>
-</section>
+</div>
 
-<section>
-<h2>2. Problem Statement</h2>
-<ul>
-<li>Housing search relies on unreliable social media groups</li>
-<li>High risk of scams and misinformation</li>
-<li>Second-hand trading lacks trust and structure</li>
-<li>No standardized service for remote housing viewing</li>
-</ul>
-</section>
+<!-- FEATURES -->
+<div class="section">
+<h2>Core Features</h2>
 
-<section>
-<h2>3. Our Solution</h2>
-<ul>
-<li>Verified student-only marketplace</li>
-<li>Housing viewing services by senior students</li>
-<li>Escrow-style payment protection</li>
-<li>Standardized service and transaction workflow</li>
-</ul>
-</section>
+<div class="cards">
 
-<section>
-<h2>4. Core Features (MVP)</h2>
+<div class="card">
+<h3>Housing Viewing</h3>
+<p>Book verified students to inspect properties and provide real feedback with photos and videos.</p>
+</div>
 
-<h3>4.1 Housing Viewing Service</h3>
-<ul>
-<li>Service booking system</li>
-<li>Standardized inspection checklist</li>
-<li>Photo & video evidence submission</li>
-<li>Review and rating system</li>
-</ul>
+<div class="card">
+<h3>Second-hand Marketplace</h3>
+<p>Safe and structured platform for buying and selling student goods.</p>
+</div>
 
-<h3>4.2 Second-hand Marketplace</h3>
-<ul>
-<li>Item listing (electronics, furniture, study tools)</li>
-<li>On-campus transaction system</li>
-<li>Graduation gown rental/resale</li>
-<li>Short-term academic tool rental</li>
-</ul>
+<div class="card">
+<h3>Escrow Payment</h3>
+<p>Funds are protected until transaction completion, reducing fraud risk.</p>
+</div>
 
-</section>
+</div>
+</div>
 
-<section>
-<h2>5. Target Users</h2>
-<ul>
-<li>Incoming international students</li>
-<li>Current students relocating</li>
-<li>Graduating students selling items</li>
-<li>Senior students providing services</li>
-</ul>
-</section>
+<!-- PROGRESS -->
+<div class="section">
+<h2>Project Progress</h2>
 
-<section>
-<h2>6. Project Progress (IMPORTANT)</h2>
-<ul>
-<li>✔ Proposal completed (March 2026)</li>
-<li>✔ MVP design finalized</li>
-<li>⏳ Platform development (ongoing)</li>
-<li>⏳ Supplier recruitment (housing providers & sellers)</li>
-<li>⏳ Marketing setup (Xiaohongshu & campus promotion)</li>
-</ul>
-</section>
+<div class="progress">
 
-<section>
-<h2>7. Timeline</h2>
-<ul>
-<li>Jan–Feb 2026: Proposal submission</li>
-<li>May 2026: Project website launch</li>
-<li>May 2026: Interim report</li>
-<li>Aug 2026: Final report & presentation</li>
-</ul>
-</section>
+<div class="stat">
+<h1>200+</h1>
+<p>Users</p>
+</div>
 
-<section>
-<h2>8. Team Members</h2>
-<ul>
-<li>Gong Ziqin – Product Lead</li>
-<li>Si Qing – Data & Web Development</li>
-<li>Chen Xi – Operations</li>
-<li>Yi Lanxin – Growth & Marketing</li>
-<li>Pan Xinyu – UX & Compliance</li>
-</ul>
-</section>
+<div class="stat">
+<h1>150+</h1>
+<p>Listings</p>
+</div>
 
-<section>
-<h2>9. Future Updates</h2>
-<p>
-This webpage will be continuously updated to reflect project progress, 
-data metrics, and operational insights throughout the development cycle.
+<div class="stat">
+<h1>80+</h1>
+<p>Transactions</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- MVP -->
+<div class="section">
+<h2>MVP Preview</h2>
+<p style="text-align:center;">
+(Youzan Mini-Program screenshots will be updated here)
 </p>
-</section>
+</div>
+
+<!-- TIMELINE -->
+<div class="section">
+<h2>Timeline</h2>
+<p style="text-align:center;">
+Proposal → Website → MVP Launch → Interim Report → Final Report
+</p>
+</div>
+
+<!-- TEAM -->
+<div class="section">
+<h2>Team</h2>
+
+<div class="team">
+
+<div class="member">
+<b>Gong Ziqin</b>
+<p>Product</p>
+</div>
+
+<div class="member">
+<b>Si Qing</b>
+<p>Data</p>
+</div>
+
+<div class="member">
+<b>Chen Xi</b>
+<p>Operations</p>
+</div>
+
+<div class="member">
+<b>Yi Lanxin</b>
+<p>Marketing</p>
+</div>
+
+<div class="member">
+<b>Pan Xinyu</b>
+<p>UX</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>HKBuddy Project © 2026</p>
+</div>
 
 </body>
 </html>
